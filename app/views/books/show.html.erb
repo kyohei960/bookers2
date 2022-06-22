@@ -1,6 +1,4 @@
-<%= render 'list', user: @user %>
-<%= render 'list', book:
-<%= render 'list', book: @book %>
+<%= render 'list', user: @user, book: @books %>
 
 
 
@@ -12,12 +10,6 @@
     <%= @book.user.name %>
     <%= @book.title %>
     <%= @book.body %>
-
-
-
-
-
-
     <% if @book.user == current_user %>
         <%= link_to "Edit", edit_book_path(@book) %>
         <%= link_to "Destroy", book_path(@book), method: :delete %>
