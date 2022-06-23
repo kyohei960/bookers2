@@ -1,3 +1,4 @@
+<%= render '/books/error', book: @user %>
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
@@ -13,7 +14,7 @@
         </div>
         <div class="form-group">
           <label for="user_introduciton">Introduction</label>
-          <%= f.text_area :Introduction, class:'form-control introduction' %>
+          <%= f.text_area :introduction, class:'form-control introduction' %>
         </div>
         <%= f.submit "Update User", class:'btn btn-secondary' %></br>
       <% end %>
